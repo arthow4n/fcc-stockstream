@@ -1,0 +1,1 @@
+angular.module("fcc-stockstream", ["angular-meteor", "ui.router"]);
