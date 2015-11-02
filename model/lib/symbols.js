@@ -1,0 +1,1 @@
+Symbols = new Mongo.Collection("symbols");

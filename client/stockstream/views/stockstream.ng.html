@@ -2,6 +2,10 @@
     <h1>fcc-stockstream</h1>
     
     <ul class="tickerSymbolsList">
-        <li ng-repeat="symbol in symbolsList">{{symbol}}</li>
+        <li ng-repeat="symbol in symbols">{{symbol.name}}<button ng-click="removeSymbol(symbol)">X</button></li>
     </ul>
+    
+    <form ng-submit="addSymbol(newSymbol)">
+        <input type="text" ng-model="newSymbol" ng-trim="true"><button type="submit">Submit</button>
+    </form>
 </div>
